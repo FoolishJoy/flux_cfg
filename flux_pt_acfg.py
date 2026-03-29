@@ -6,7 +6,7 @@ from PIL import Image
 from tqdm import tqdm
 from safetensors.torch import load_file as load_sft
 
-# 设置显存碎片优化（非常关键！）
+# 设置显存碎片优化
 os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "expandable_segments:True"
 # 导入 FLUX 源码
 sys.path.append("/home/mcy/flux/src")
